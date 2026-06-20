@@ -1,0 +1,48 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOSAutomation.Core", "src\IOSAutomation.Core\IOSAutomation.Core.csproj", "{A1B2C3D4-E5F6-47G8-H9I0-J1K2L3M4N5O6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOSAutomation.DeviceManagement", "src\IOSAutomation.DeviceManagement\IOSAutomation.DeviceManagement.csproj", "{B1C2D3E4-F5G6-47H8-I9J0-K1L2M3N4O5P6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOSAutomation.VisualProcessing", "src\IOSAutomation.VisualProcessing\IOSAutomation.VisualProcessing.csproj", "{C1D2E3F4-G5H6-47I8-J9K0-L1M2N3O4P5Q6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOSAutomation.ScenarioEngine", "src\IOSAutomation.ScenarioEngine\IOSAutomation.ScenarioEngine.csproj", "{D1E2F3G4-H5I6-47J8-K9L0-M1N2O3P4Q5R6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOSAutomation.Logging", "src\IOSAutomation.Logging\IOSAutomation.Logging.csproj", "{E1F2G3H4-I5J6-47K8-L9M0-N1O2P3Q4R5S6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOSAutomation.Desktop", "src\IOSAutomation.Desktop\IOSAutomation.Desktop.csproj", "{F1G2H3I4-J5K6-47L8-M9N0-O1P2Q3R4S5T6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1B2C3D4-E5F6-47G8-H9I0-J1K2L3M4N5O6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-E5F6-47G8-H9I0-J1K2L3M4N5O6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-E5F6-47G8-H9I0-J1K2L3M4N5O6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-E5F6-47G8-H9I0-J1K2L3M4N5O6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1C2D3E4-F5G6-47H8-I9J0-K1L2M3N4O5P6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C2D3E4-F5G6-47H8-I9J0-K1L2M3N4O5P6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C2D3E4-F5G6-47H8-I9J0-K1L2M3N4O5P6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C2D3E4-F5G6-47H8-I9J0-K1L2M3N4O5P6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D2E3F4-G5H6-47I8-J9K0-L1M2N3O4P5Q6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D2E3F4-G5H6-47I8-J9K0-L1M2N3O4P5Q6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D2E3F4-G5H6-47I8-J9K0-L1M2N3O4P5Q6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D2E3F4-G5H6-47I8-J9K0-L1M2N3O4P5Q6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1E2F3G4-H5I6-47J8-K9L0-M1N2O3P4Q5R6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1E2F3G4-H5I6-47J8-K9L0-M1N2O3P4Q5R6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1E2F3G4-H5I6-47J8-K9L0-M1N2O3P4Q5R6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1E2F3G4-H5I6-47J8-K9L0-M1N2O3P4Q5R6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F2G3H4-I5J6-47K8-L9M0-N1O2P3Q4R5S6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F2G3H4-I5J6-47K8-L9M0-N1O2P3Q4R5S6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F2G3H4-I5J6-47K8-L9M0-N1O2P3Q4R5S6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F2G3H4-I5J6-47K8-L9M0-N1O2P3Q4R5S6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1G2H3I4-J5K6-47L8-M9N0-O1P2Q3R4S5T6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1G2H3I4-J5K6-47L8-M9N0-O1P2Q3R4S5T6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1G2H3I4-J5K6-47L8-M9N0-O1P2Q3R4S5T6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1G2H3I4-J5K6-47L8-M9N0-O1P2Q3R4S5T6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
