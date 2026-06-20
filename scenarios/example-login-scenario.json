@@ -1,0 +1,115 @@
+{
+  "id": "scenario-login-001",
+  "name": "User Login Test",
+  "description": "Tests basic user login functionality with valid credentials",
+  "targetAppBundleId": "com.example.testapp",
+  "parameters": {
+    "username": "testuser@example.com",
+    "password": "testpass123",
+    "timeout": 30000
+  },
+  "steps": [
+    {
+      "id": "step-001",
+      "description": "Take initial screenshot",
+      "actionType": "TakeScreenshot",
+      "parameters": {},
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-002",
+      "description": "Tap on username field",
+      "actionType": "TapElement",
+      "parameters": {
+        "elementId": "username_field",
+        "x": 160,
+        "y": 200
+      },
+      "expectationCriteria": [
+        {
+          "expectationType": "ElementVisible",
+          "value": "username_field",
+          "operator": "Equals"
+        }
+      ]
+    },
+    {
+      "id": "step-003",
+      "description": "Enter username",
+      "actionType": "EnterText",
+      "parameters": {
+        "text": "testuser@example.com"
+      },
+      "expectationCriteria": [
+        {
+          "expectationType": "TextMatches",
+          "value": "testuser@example.com",
+          "operator": "Equals"
+        }
+      ]
+    },
+    {
+      "id": "step-004",
+      "description": "Tap on password field",
+      "actionType": "TapElement",
+      "parameters": {
+        "elementId": "password_field",
+        "x": 160,
+        "y": 250
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-005",
+      "description": "Enter password",
+      "actionType": "EnterText",
+      "parameters": {
+        "text": "testpass123"
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-006",
+      "description": "Tap login button",
+      "actionType": "TapElement",
+      "parameters": {
+        "elementId": "login_button",
+        "x": 160,
+        "y": 320
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-007",
+      "description": "Wait for dashboard to load",
+      "actionType": "Delay",
+      "parameters": {
+        "duration": 2000
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-008",
+      "description": "Verify successful login - take screenshot",
+      "actionType": "TakeScreenshot",
+      "parameters": {},
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-009",
+      "description": "Verify dashboard elements",
+      "actionType": "VerifyElement",
+      "parameters": {
+        "elementType": "Label",
+        "expectedText": "Dashboard"
+      },
+      "expectationCriteria": [
+        {
+          "expectationType": "ElementVisible",
+          "value": "dashboard_title",
+          "operator": "Equals"
+        }
+      ]
+    }
+  ]
+}

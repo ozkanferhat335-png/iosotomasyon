@@ -1,0 +1,109 @@
+{
+  "id": "scenario-form-fill-001",
+  "name": "Form Filling Test",
+  "description": "Tests form filling functionality with multiple input fields",
+  "targetAppBundleId": "com.example.testapp",
+  "parameters": {
+    "timeout": 30000
+  },
+  "steps": [
+    {
+      "id": "step-001",
+      "description": "Navigate to registration form",
+      "actionType": "TapElement",
+      "parameters": {
+        "elementId": "register_button"
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-002",
+      "description": "Wait for form to load",
+      "actionType": "Delay",
+      "parameters": {
+        "duration": 1500
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-003",
+      "description": "Fill first name",
+      "actionType": "EnterText",
+      "parameters": {
+        "text": "John"
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-004",
+      "description": "Fill last name",
+      "actionType": "EnterText",
+      "parameters": {
+        "text": "Doe"
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-005",
+      "description": "Fill email",
+      "actionType": "EnterText",
+      "parameters": {
+        "text": "john.doe@example.com"
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-006",
+      "description": "Fill phone number",
+      "actionType": "EnterText",
+      "parameters": {
+        "text": "+1234567890"
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-007",
+      "description": "Scroll down to see submit button",
+      "actionType": "ScrollScreen",
+      "parameters": {
+        "direction": "down",
+        "amount": 300
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-008",
+      "description": "Tap submit button",
+      "actionType": "TapElement",
+      "parameters": {
+        "elementId": "submit_button"
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-009",
+      "description": "Wait for submission confirmation",
+      "actionType": "Delay",
+      "parameters": {
+        "duration": 2000
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-010",
+      "description": "Verify success message",
+      "actionType": "VerifyElement",
+      "parameters": {
+        "elementType": "Label",
+        "expectedText": "Registration successful"
+      },
+      "expectationCriteria": [
+        {
+          "expectationType": "TextContains",
+          "value": "successful",
+          "operator": "Contains"
+        }
+      ]
+    }
+  ]
+}

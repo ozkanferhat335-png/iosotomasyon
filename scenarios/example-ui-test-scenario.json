@@ -1,0 +1,67 @@
+{
+  "id": "scenario-ui-elements-001",
+  "name": "UI Element Detection Test",
+  "description": "Tests visual element detection and interaction",
+  "targetAppBundleId": "com.example.testapp",
+  "parameters": {
+    "timeout": 30000
+  },
+  "steps": [
+    {
+      "id": "step-001",
+      "description": "Take screenshot for element detection",
+      "actionType": "TakeScreenshot",
+      "parameters": {},
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-002",
+      "description": "Extract and analyze text from screen",
+      "actionType": "ExtractText",
+      "parameters": {},
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-003",
+      "description": "Tap first button found",
+      "actionType": "TapElement",
+      "parameters": {
+        "elementId": "button_0"
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-004",
+      "description": "Wait for response",
+      "actionType": "Delay",
+      "parameters": {
+        "duration": 1000
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-005",
+      "description": "Take screenshot after action",
+      "actionType": "TakeScreenshot",
+      "parameters": {},
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-006",
+      "description": "Long tap on element",
+      "actionType": "LongTapElement",
+      "parameters": {
+        "elementId": "button_1",
+        "duration": 2000
+      },
+      "expectationCriteria": []
+    },
+    {
+      "id": "step-007",
+      "description": "Take screenshot to verify action",
+      "actionType": "TakeScreenshot",
+      "parameters": {},
+      "expectationCriteria": []
+    }
+  ]
+}
